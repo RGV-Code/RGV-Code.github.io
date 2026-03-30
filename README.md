@@ -1,7 +1,5 @@
 <h1 align="center">Hey 👋What's Up?</h1>
 
-# Rocco Given Visagie
-
 📍 26 Kameeldoring Street, Rouxville, Kuilsriver, Cape Town, 7580  
 📧 220343527@mycput.ac.za  
 📞 060 920 8354  
