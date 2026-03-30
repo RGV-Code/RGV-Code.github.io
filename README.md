@@ -64,17 +64,7 @@ _2015_
 - JavaScript Programming  
 - Debugging  
 - Usability Testing  
-- UX/UI Design  
-
----
-
-## 📚 Professional Development
-
-*(To be updated)*
-
-- Course – Organization, Location  
-- Course – Organization, Location  
-- Workshop – Organization, Location  
+- UX/UI Design 
 
 ---
 
