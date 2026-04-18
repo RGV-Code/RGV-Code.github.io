@@ -3,7 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="">
 <title>Rocco Visagie — Full Stack Developer</title>
+<style>
+  /* Suppress any GitHub Pages injected elements */
+  .site-header, .site-footer, header.site-header,
+  #header, .header, .gh-header, .pagehead,
+  [class*="github"], [id*="github"],
+  .markdown-body > p:first-child a[href*="github"],
+  body > a:first-child, body > p:first-child {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    overflow: hidden !important;
+  }
+</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
