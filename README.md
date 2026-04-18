@@ -6,17 +6,27 @@
 <meta name="generator" content="">
 <title>Rocco Visagie — Full Stack Developer</title>
 <style>
-  /* Suppress any GitHub Pages injected elements */
+  /* Suppress ALL GitHub Pages Jekyll-injected elements */
   .site-header, .site-footer, header.site-header,
   #header, .header, .gh-header, .pagehead,
   [class*="github"], [id*="github"],
-  .markdown-body > p:first-child a[href*="github"],
-  body > a:first-child, body > p:first-child {
+  .markdown-body > p:first-child,
+  .markdown-body > h1:first-child,
+  body > a:first-child,
+  body > p:first-child,
+  body > h1:first-child,
+  .container-lg,
+  .markdown-body > *:not(#root):first-child {
     display: none !important;
     visibility: hidden !important;
     height: 0 !important;
+    max-height: 0 !important;
     overflow: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
+  /* Hide raw text nodes GitHub Pages may inject (DOCTYPE, title) */
+  body::before { content: none !important; }
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -1137,6 +1147,33 @@
 </footer>
 
 <script>
+  // Remove GitHub Pages injected elements before anything renders
+  (function() {
+    const remove = (sel) => document.querySelectorAll(sel).forEach(el => el.remove());
+    function cleanGitHub() {
+      remove('.site-header');
+      remove('.site-footer');
+      remove('#header');
+      remove('.gh-header');
+      remove('.container-lg > h1:first-child');
+      remove('.markdown-body > h1');
+      remove('.markdown-body > p:first-child');
+      // Remove any text nodes at body level that contain DOCTYPE or site title
+      document.body.childNodes.forEach(node => {
+        if (node.nodeType === 3 && node.textContent.trim()) {
+          node.remove();
+        }
+      });
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', cleanGitHub);
+    } else {
+      cleanGitHub();
+    }
+    // Also run after a short delay to catch late injections
+    setTimeout(cleanGitHub, 100);
+  })();
+
   // Custom cursor
   const cursor = document.getElementById('cursor');
   const ring = document.getElementById('cursorRing');
