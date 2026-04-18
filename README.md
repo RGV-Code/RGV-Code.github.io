@@ -311,10 +311,10 @@
 
   /* ─── ABOUT ─── */
   #about {
-    padding: 8rem 4rem;
+    padding: 4rem 4rem;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 6rem;
+    gap: 3rem;
     align-items: start;
     background: var(--paper);
     border-top: 1px solid rgba(0,0,0,0.08);
@@ -361,7 +361,7 @@
 
   /* ─── SKILLS ─── */
   #skills {
-    padding: 8rem 4rem;
+    padding: 4rem 4rem;
     background: var(--ink);
     color: var(--paper);
     overflow: hidden;
@@ -374,7 +374,7 @@
     font-family: 'Playfair Display', serif;
     font-size: clamp(2.5rem, 5vw, 4.5rem);
     line-height: 1;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     color: var(--paper);
   }
   .skills-heading em {
@@ -430,7 +430,7 @@
 
   /* ─── EXPERIENCE ─── */
   #experience {
-    padding: 8rem 4rem;
+    padding: 4rem 4rem;
     background: var(--mist);
   }
 
@@ -438,7 +438,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 
   .exp-heading {
@@ -466,7 +466,7 @@
 
   .exp-item {
     position: relative;
-    padding: 2rem 0 2rem 0;
+    padding: 1.2rem 0;
     border-bottom: 1px solid rgba(0,0,0,0.06);
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -525,11 +525,11 @@
 
   /* ─── EDUCATION ─── */
   #education {
-    padding: 8rem 4rem;
+    padding: 4rem 4rem;
     background: var(--paper);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 6rem;
+    gap: 3rem;
     align-items: center;
   }
 
@@ -603,7 +603,7 @@
 
   /* ─── REFERENCES ─── */
   #references {
-    padding: 8rem 4rem;
+    padding: 4rem 4rem;
     background: var(--slate);
     color: var(--paper);
     text-align: center;
@@ -615,7 +615,7 @@
     font-family: 'Playfair Display', serif;
     font-size: clamp(2.5rem, 5vw, 4rem);
     color: var(--paper);
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 
   .ref-grid {
@@ -919,10 +919,10 @@
 <!-- ABOUT -->
 <section id="about">
   <div class="about-sidebar reveal">
+    <div class="section-label">Career Objective</div>
     <h2 class="about-heading">About<br>Me</h2>
   </div>
   <div class="about-body reveal">
-    <div class="section-label">Career Objective</div>
     <p>
       I'm a <strong>final-year ICT Applications Development student</strong> at Cape Peninsula University of Technology, with a deep passion for crafting digital experiences that feel just right — visually compelling, intuitive, and enjoyable to use.
     </p>
@@ -1129,7 +1129,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">Rocco Visagie</div>
+  <div class="footer-logo">Rocco Given Visagie</div>
   <a href="mailto:220343527@mycput.ac.za" class="footer-email">220343527@mycput.ac.za</a>
   <a href="https://www.linkedin.com/in/rocco-given-visagie-597717312/?skipRedirect=true" target="_blank" class="footer-email">LinkedIn ↗</a>
   <span class="footer-copy">© 2025 — Cape Town, ZA</span>
