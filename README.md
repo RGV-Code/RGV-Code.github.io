@@ -135,7 +135,8 @@
 
   /* ─── HERO ─── */
   #hero {
-    min-height: 100vh;
+    height: 100vh;
+    max-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     position: relative;
@@ -145,27 +146,27 @@
   .hero-left {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    padding: 8rem 3rem 5rem 4rem;
+    justify-content: center;
+    padding: 5rem 3rem 3rem 4rem;
     position: relative;
     z-index: 2;
   }
 
   .hero-eyebrow {
     font-family: 'Inter', sans-serif;
-    font-size: 0.72rem;
+    font-size: 0.65rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--rust);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     opacity: 0;
     animation: fadeUp 0.8s 0.3s forwards;
   }
 
   .hero-name {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(4rem, 8vw, 7.5rem);
-    line-height: 0.88;
+    font-size: clamp(2.8rem, 5vw, 5rem);
+    line-height: 1;
     letter-spacing: -0.01em;
     color: var(--ink);
     opacity: 0;
@@ -180,17 +181,17 @@
   .hero-title {
     font-family: 'Playfair Display', serif;
     font-style: italic;
-    font-size: clamp(1.1rem, 2vw, 1.6rem);
+    font-size: clamp(0.9rem, 1.5vw, 1.2rem);
     color: var(--slate);
-    margin-top: 1.5rem;
+    margin-top: 0.75rem;
     opacity: 0;
     animation: fadeUp 0.9s 0.7s forwards;
   }
 
   .hero-tagline {
-    margin-top: 2rem;
-    font-size: 0.85rem;
-    line-height: 1.7;
+    margin-top: 0.75rem;
+    font-size: 0.8rem;
+    line-height: 1.6;
     color: #555;
     max-width: 38ch;
     opacity: 0;
@@ -311,7 +312,7 @@
 
   /* ─── ABOUT ─── */
   #about {
-    padding: 4rem 4rem;
+    padding: 3rem 4rem;
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 3rem;
@@ -333,17 +334,17 @@
 
   .about-heading {
     font-family: 'Playfair Display', serif;
-    font-size: 2.8rem;
+    font-size: 2rem;
     letter-spacing: 0.02em;
-    line-height: 1;
+    line-height: 1.1;
     color: var(--ink);
   }
 
   .about-body p {
-    font-size: 1.1rem;
-    line-height: 1.85;
+    font-size: 0.88rem;
+    line-height: 1.75;
     color: #444;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     max-width: 60ch;
   }
 
@@ -356,12 +357,12 @@
     width: 60px;
     height: 3px;
     background: var(--rust);
-    margin: 2rem 0;
+    margin: 1rem 0;
   }
 
   /* ─── SKILLS ─── */
   #skills {
-    padding: 4rem 4rem;
+    padding: 3rem 4rem;
     background: var(--ink);
     color: var(--paper);
     overflow: hidden;
@@ -372,7 +373,7 @@
 
   .skills-heading {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-size: clamp(1.8rem, 3vw, 2.8rem);
     line-height: 1;
     margin-bottom: 2rem;
     color: var(--paper);
@@ -391,7 +392,7 @@
 
   .skill-card {
     background: var(--slate);
-    padding: 2.5rem 2rem;
+    padding: 1.5rem 1.5rem;
     position: relative;
     overflow: hidden;
     transition: background 0.35s;
@@ -430,7 +431,7 @@
 
   /* ─── EXPERIENCE ─── */
   #experience {
-    padding: 4rem 4rem;
+    padding: 3rem 4rem;
     background: var(--mist);
   }
 
@@ -443,7 +444,7 @@
 
   .exp-heading {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: clamp(1.8rem, 3vw, 2.8rem);
     line-height: 1;
     color: var(--ink);
   }
@@ -525,7 +526,7 @@
 
   /* ─── EDUCATION ─── */
   #education {
-    padding: 4rem 4rem;
+    padding: 3rem 4rem;
     background: var(--paper);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -535,7 +536,7 @@
 
   .edu-visual {
     position: relative;
-    height: 400px;
+    height: 260px;
   }
 
   .edu-block {
@@ -589,10 +590,10 @@
 
   .edu-heading {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(2.2rem, 4vw, 3.5rem);
-    line-height: 1;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    line-height: 1.1;
     color: var(--ink);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   .edu-body {
@@ -603,7 +604,7 @@
 
   /* ─── REFERENCES ─── */
   #references {
-    padding: 4rem 4rem;
+    padding: 3rem 4rem;
     background: var(--slate);
     color: var(--paper);
     text-align: center;
@@ -613,7 +614,7 @@
 
   .ref-heading {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: clamp(1.8rem, 3vw, 2.8rem);
     color: var(--paper);
     margin-bottom: 2rem;
   }
@@ -629,7 +630,7 @@
 
   .ref-card {
     background: #232730;
-    padding: 2.5rem 2rem;
+    padding: 1.5rem 1.5rem;
     position: relative;
     overflow: hidden;
     transition: background 0.3s;
