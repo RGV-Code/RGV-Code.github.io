@@ -155,4 +155,46 @@ body{background:var(--black);color:var(--white);font-family:var(--fb);line-heigh
   <div class="sec" id="s5">
     <div class="sec-head">References</div>
     <div class="ref-grid">
-      <div class="ref"><div class="ref-av">PH</div><div class="ref-name">Phillip Human</div><div class="ref-ph">083 395 8662</div></d
+      <div class="ref"><div class="ref-av">PH</div><div class="ref-name">Phillip Human</div><div class="ref-ph">083 395 8662</div></div>
+      <div class="ref"><div class="ref-av">RH</div><div class="ref-name">Ronisha Hendricks</div><div class="ref-ph">064 032 2039</div></div>
+    </div>
+  </div>
+
+  <div class="sec" id="s6">
+    <div class="sec-head">Connect</div>
+    <div class="li-banner">
+      <div class="li-banner-left">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        <div class="li-banner-text">
+          <strong>Rocco Given Visagie</strong>
+          linkedin.com/in/rocco-given-visagie-597717312
+        </div>
+      </div>
+      <a href="https://www.linkedin.com/in/rocco-given-visagie-597717312/" target="_blank" class="li-btn">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        View Profile
+      </a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p class="footer-q">"Crafting seamless end-to-end solutions that balance aesthetic detail with technical integrity."</p>
+    <div class="footer-m">ROCCO GIVEN VISAGIE <span class="footer-o">·</span> CAPE TOWN <span class="footer-o">·</span> OPEN TO OPPORTUNITIES</div>
+  </div>
+
+</div>
+<script>
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('vis');
+      e.target.querySelectorAll('.bar-fill').forEach(b=>{
+        setTimeout(()=>{b.style.width=b.dataset.w+'%'},250);
+      });
+      obs.unobserve(e.target);
+    }
+  });
+},{threshold:0.1});
+document.querySelectorAll('.sec').forEach(s=>obs.observe(s));
+</script>
+</body>
