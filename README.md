@@ -26,7 +26,7 @@ body{background:var(--black);color:var(--white);font-family:var(--fb);line-heigh
 .pill:hover{border-color:var(--orange);color:var(--orange)}
 .pill-dot{width:5px;height:5px;border-radius:50%;background:var(--orange);flex-shrink:0}
 .av-wrap{width:160px;height:160px;border-radius:50%;padding:3px;background:conic-gradient(var(--orange),var(--navy3),var(--orange));flex-shrink:0}
-.av-inner{width:100%;height:100%;border-radius:50%;background:var(--navy2);border:2px solid var(--navy);display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-size:48px;letter-spacing:0.04em;color:var(--orange)}
+.av-inner{width:100%;height:100%;border-radius:50%;background:var(--navy2);border:2px solid var(--navy);display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-size:40px;letter-spacing:0.04em;color:var(--orange)}
 .banner{display:flex;align-items:center;gap:10px;padding:14px 20px;background:var(--orange-dim2);border:1px solid var(--border);border-radius:10px;margin-bottom:72px;font-family:var(--fm);font-size:12px;color:var(--orange2)}
 .blink{width:8px;height:8px;border-radius:50%;background:var(--orange);animation:blink 2s ease infinite;flex-shrink:0}
 .sec{margin-bottom:68px;opacity:0;transform:translateY(16px)}
@@ -83,7 +83,7 @@ body{background:var(--black);color:var(--white);font-family:var(--fb);line-heigh
   <div class="hero">
     <div>
       <div class="hero-eyebrow">Full Stack Developer</div>
-      <h1>ROCCO<br><em>VISAGIE</em></h1>
+      <h1>ROCCO GIVEN<br><em>VISAGIE</em></h1>
       <p class="bio">Passionate about building digital experiences that are visually compelling, intuitive, and a joy to use — bridging design and development, one clean line of code at a time.</p>
       <div class="pills">
         <a href="mailto:220343527@mycput.ac.za" class="pill"><span class="pill-dot"></span>220343527@mycput.ac.za</a>
@@ -91,7 +91,7 @@ body{background:var(--black);color:var(--white);font-family:var(--fb);line-heigh
         <div class="pill"><span class="pill-dot"></span>Cape Town, ZA</div>
       </div>
     </div>
-    <div class="av-wrap"><div class="av-inner">RV</div></div>
+    <div class="av-wrap"><div class="av-inner">RGV</div></div>
   </div>
 
   <div class="banner">
