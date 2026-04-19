@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -168,4 +166,3 @@ const obs=new IntersectionObserver(entries=>{
 document.querySelectorAll('.sec').forEach(s=>obs.observe(s));
 </script>
 </body>
-</html>
