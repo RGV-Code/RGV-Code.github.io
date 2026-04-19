@@ -25,6 +25,9 @@ body{background:var(--black);color:var(--white);font-family:var(--fb);line-heigh
 .pill{display:flex;align-items:center;gap:7px;padding:7px 14px;background:var(--navy2);border:1px solid var(--border);border-radius:100px;font-family:var(--fm);font-size:11px;color:var(--muted2);text-decoration:none;transition:all 0.2s}
 .pill:hover{border-color:var(--orange);color:var(--orange)}
 .pill-dot{width:5px;height:5px;border-radius:50%;background:var(--orange);flex-shrink:0}
+.pill-li{display:flex;align-items:center;gap:7px;padding:7px 14px;background:#0a66c2;border:1px solid #0a66c2;border-radius:100px;font-family:var(--fm);font-size:11px;color:#fff;text-decoration:none;transition:all 0.2s}
+.pill-li:hover{background:#0856a0;border-color:#0856a0}
+.pill-li svg{width:12px;height:12px;fill:#fff;flex-shrink:0}
 .av-wrap{width:160px;height:160px;border-radius:50%;padding:3px;background:conic-gradient(var(--orange),var(--navy3),var(--orange));flex-shrink:0}
 .av-inner{width:100%;height:100%;border-radius:50%;background:var(--navy2);border:2px solid var(--navy);display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-size:40px;letter-spacing:0.04em;color:var(--orange)}
 .banner{display:flex;align-items:center;gap:10px;padding:14px 20px;background:var(--orange-dim2);border:1px solid var(--border);border-radius:10px;margin-bottom:72px;font-family:var(--fm);font-size:12px;color:var(--orange2)}
@@ -58,12 +61,20 @@ body{background:var(--black);color:var(--white);font-family:var(--fb);line-heigh
 .edu-badge{display:inline-block;padding:4px 12px;border-radius:100px;font-family:var(--fm);font-size:10px;letter-spacing:0.07em;background:var(--orange-dim);border:1px solid var(--border);color:var(--orange2)}
 .edu-badge.done{background:rgba(10,22,40,0.6);border-color:rgba(255,255,255,0.12);color:var(--muted2)}
 .loc-box{background:var(--navy2);border:1px solid var(--border2);border-left:3px solid var(--orange);border-radius:0 12px 12px 0;padding:24px 28px;font-family:var(--fm);font-size:13px;color:var(--muted2);line-height:2.1}
-.ref-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.ref-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
 .ref{background:var(--navy2);border:1px solid var(--border2);border-radius:12px;padding:20px;transition:border-color 0.2s}
 .ref:hover{border-color:var(--border)}
 .ref-av{width:42px;height:42px;border-radius:50%;background:var(--navy3);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-size:15px;color:var(--orange);margin-bottom:12px}
 .ref-name{font-family:var(--fb);font-size:14px;font-weight:600;color:var(--white);margin-bottom:4px}
 .ref-ph{font-family:var(--fm);font-size:11px;color:var(--muted)}
+.li-banner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 24px;background:#0a1f3d;border:1px solid #0a66c2;border-radius:12px;margin-top:28px}
+.li-banner-left{display:flex;align-items:center;gap:12px}
+.li-banner-left svg{width:24px;height:24px;fill:#0a66c2;flex-shrink:0}
+.li-banner-text{font-family:var(--fm);font-size:12px;color:var(--muted2)}
+.li-banner-text strong{color:var(--white);display:block;margin-bottom:2px;font-size:13px}
+.li-btn{display:inline-flex;align-items:center;gap:7px;padding:9px 18px;background:#0a66c2;border-radius:100px;font-family:var(--fm);font-size:11px;color:#fff;text-decoration:none;white-space:nowrap;transition:background 0.2s}
+.li-btn:hover{background:#0856a0}
+.li-btn svg{width:11px;height:11px;fill:#fff}
 .footer{border-top:1px solid var(--border2);padding-top:40px;text-align:center}
 .footer-q{font-size:14px;font-style:italic;color:var(--muted);margin-bottom:14px}
 .footer-m{font-family:var(--fm);font-size:10px;color:var(--muted);letter-spacing:0.16em}
@@ -72,8 +83,9 @@ body{background:var(--black);color:var(--white);font-family:var(--fb);line-heigh
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0.4}}
 @media(max-width:600px){
   .hero{grid-template-columns:1fr}.av-wrap{display:none}
-  .edu-grid{grid-template-columns:1fr}.ref-grid{grid-template-columns:1fr 1fr}
+  .edu-grid{grid-template-columns:1fr}.ref-grid{grid-template-columns:1fr}
   .wrap{padding:36px 18px}
+  .li-banner{flex-direction:column;align-items:flex-start}
 }
 </style>
 </head>
@@ -89,6 +101,10 @@ body{background:var(--black);color:var(--white);font-family:var(--fb);line-heigh
         <a href="mailto:220343527@mycput.ac.za" class="pill"><span class="pill-dot"></span>220343527@mycput.ac.za</a>
         <a href="tel:+27609208354" class="pill"><span class="pill-dot"></span>060 920 8354</a>
         <div class="pill"><span class="pill-dot"></span>Cape Town, ZA</div>
+        <a href="https://www.linkedin.com/in/rocco-given-visagie-597717312/" target="_blank" class="pill-li">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
       </div>
     </div>
     <div class="av-wrap"><div class="av-inner">RGV</div></div>
@@ -115,54 +131,4 @@ body{background:var(--black);color:var(--white);font-family:var(--fb);line-heigh
     <div class="sec-head">Work Experience</div>
     <div class="tl">
       <div class="tl-item"><div class="tl-co">Capita Call Centre</div><div class="tl-role">Customer Experience Advisor — Marks &amp; Spencer Campaign</div><div class="tl-date">June 2022 – January 2024</div></div>
-      <div class="tl-item"><div class="tl-co">Deli Den Urban Farmhouse</div><div class="tl-role">Cashier / Merchandiser / Sales Assistant</div><div class="tl-date">2022</div></div>
-      <div class="tl-item"><div class="tl-co">Footgear – Access Park</div><div class="tl-role">Sales Associate</div><div class="tl-date">2021</div></div>
-      <div class="tl-item"><div class="tl-co">Dis-Chem</div><div class="tl-role">Cashier / Merchandiser</div><div class="tl-date">2019</div></div>
-      <div class="tl-item"><div class="tl-co">Ignite Events Company</div><div class="tl-role">Bartender / Waiter</div><div class="tl-date">2016</div></div>
-      <div class="tl-item" style="margin-bottom:0"><div class="tl-co">Spur Steak Ranches</div><div class="tl-role">Waiter</div><div class="tl-date">2015</div></div>
-    </div>
-  </div>
-
-  <div class="sec" id="s3">
-    <div class="sec-head">Education</div>
-    <div class="edu-grid">
-      <div class="edu"><div class="edu-accent"></div><div class="edu-inst">Cape Peninsula University of Technology</div><div class="edu-deg">Diploma: ICT in Applications Development · District Six Campus</div><span class="edu-badge">Final Year · Current</span></div>
-      <div class="edu"><div class="edu-accent navy"></div><div class="edu-inst">De Kuilen High School</div><div class="edu-deg">National Senior Certificate — Bachelor's Pass</div><span class="edu-badge done">Completed 2015</span></div>
-    </div>
-  </div>
-
-  <div class="sec" id="s4">
-    <div class="sec-head">Location</div>
-    <div class="loc-box">26 Kameeldoring Street<br>Rouxville, Kuilsriver<br>Cape Town, 7580<br>South Africa</div>
-  </div>
-
-  <div class="sec" id="s5">
-    <div class="sec-head">References</div>
-    <div class="ref-grid">
-      <div class="ref"><div class="ref-av">SP</div><div class="ref-name">Stephen Pedro</div><div class="ref-ph">076 072 5156</div></div>
-      <div class="ref"><div class="ref-av">PH</div><div class="ref-name">Phillip Human</div><div class="ref-ph">083 395 8662</div></div>
-      <div class="ref"><div class="ref-av">JH</div><div class="ref-name">Justin Hector</div><div class="ref-ph">082 948 7547</div></div>
-    </div>
-  </div>
-
-  <div class="footer">
-    <p class="footer-q">"Crafting seamless end-to-end solutions that balance aesthetic detail with technical integrity."</p>
-    <div class="footer-m">ROCCO GIVEN VISAGIE <span class="footer-o">·</span> CAPE TOWN <span class="footer-o">·</span> OPEN TO OPPORTUNITIES</div>
-  </div>
-
-</div>
-<script>
-const obs=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting){
-      e.target.classList.add('vis');
-      e.target.querySelectorAll('.bar-fill').forEach(b=>{
-        setTimeout(()=>{b.style.width=b.dataset.w+'%'},250);
-      });
-      obs.unobserve(e.target);
-    }
-  });
-},{threshold:0.1});
-document.querySelectorAll('.sec').forEach(s=>obs.observe(s));
-</script>
-</body>
+      <div class="tl-item"><div class="tl-co">Deli Den Urban Farmhouse</div><div class="tl-role">Cashier / Merchandiser
