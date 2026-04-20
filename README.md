@@ -68,7 +68,7 @@ National Senior Certificate *(Bachelor’s Pass)* – 2015
 📌 Watch my mock interview below:
 
 <video width="600" controls>
-  <source src="video/interview.mp4" type="video/mp4">
+  <source src="video/Interview.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
@@ -81,6 +81,8 @@ Phillip Human
 
 Ronisha Hendricks 
 064 032 2039  
+
+-----------------------------------
 
 STAR Reflections for Digital Portfolio:
 
